@@ -1,0 +1,83 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #5c98bb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #f0f4f5;
+  box-shadow: 0 0 10px #9ccbde;
+}
+
+input[type="submit"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3e6cd6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #77b3e2;
+  color: rgb(56, 54, 54);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+  color: #e74c3c;
+  transition: opacity 0.5s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+#message.active {
+  opacity: 1;
+  height: auto;
+}
