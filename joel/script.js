@@ -3,6 +3,8 @@ document
 	.addEventListener('submit', function (e) {
 		e.preventDefault();
 
+		const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
 		const formData = {
 			firstName: document.getElementById('firstName').value,
 			lastName: document.getElementById('lastName').value,
@@ -12,6 +14,12 @@ document
 			session: document.getElementById('session').value,
 			specialRequests: document.getElementById('specialRequests').value,
 		};
+
+		if (!emailPattern.test(formData.email)) {
+			document.getElementById('message').textContent =
+				'Please enter a valid email address.';
+			return;
+		}
 
 		document.getElementById('message').textContent =
 			'Submitting Registration...';
