@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* COLOR SCHEME */
+:root {
+  --white: #F0F0F0;
+  --gray: #d8d4d4;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  background-color: var(--gray);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: var(--white);
+  width: 600px;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+
+.input-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input, select, textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--gray);
+  border-radius: 8px;
+}
+
+.name-container, .event-container, .event-ticket-container {
+  display: flex;
+  gap: 15px;
+}
+
+#eventDate, #session {
+  height: 42px;
+  box-sizing: border-box;
+}
+
+#session {
+  appearance: none;
+  box-shadow: none;
+}
+
+.submit-container {
+  margin-top: 30px;
+}
+
+.submit-btn {
+  background-color: dodgerblue;
+  color: var(--white)
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
