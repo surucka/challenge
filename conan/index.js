@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         request.open('POST', 'https://7ia4uvcxo5.execute-api.us-east-2.amazonaws.com/dev', true);
 
-        // Set the necessary headers
         request.setRequestHeader('Content-Type', 'application/json');
 
         let jsonData = JSON.stringify(formData);
